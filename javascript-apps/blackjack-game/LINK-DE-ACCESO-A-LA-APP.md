@@ -1,0 +1,1 @@
+https://gfnblackjack-app.netlify.app

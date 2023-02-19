@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+    background-color: #52BE80;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.board-row{
+    display: flex;
+}
+
+.square {
+    color: white;
+    background-color: #1E8449;
+    border: #3498DB solid 2px;
+    font-size: 2rem;
+    height: 20vh;
+    width: 15vw;
+}
+
+.sectionMain {
+    display: flex;
+    justify-content: center;
+}
+
+.titleBoard,
+.statusBoard {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.gameInfo {
+    font-size: 1.5rem;
+}
+
+.gameInfoButton {
+    font-size: 1rem;
+    background-color: #52BE80;
+
+}
+
+.liInfo:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+}

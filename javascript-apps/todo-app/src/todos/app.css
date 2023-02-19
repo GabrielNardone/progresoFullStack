@@ -1,0 +1,167 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    color: #faf9f7;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: 5vh;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.title-app,
+.subtitle-app {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.title-app {
+    font-size: 2rem;
+    text-decoration: line-through 1.2px #ffeb3b;
+    padding-top: 6vh;
+    background-color: #ffffff4d;
+}
+
+.header-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw 0 2vw;
+    gap: 1.5vh;
+}
+
+.title-input {
+    background-color: #ffffff4d;
+    border-radius: 4px;
+    border: none;
+    color: #27241d;
+}
+
+.header-list {
+    margin: 0 2vw 0 2vw;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 7vh;
+    list-style: none;
+}
+
+.filter{
+    color: #faf9f7;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.selected {
+    border: #ffffffb3 solid 2px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+article div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.incompleteCount{
+    margin-left: 2vw;
+    font-size: 1.2rem;
+}
+
+.ul-todo-list{
+    margin: 0 2vw 0 2vw;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.li-item{
+    background-color: #ffffff4d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin-top: 1.5vh;
+}
+
+.li-item div label{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.li-item button{
+    background-color: #ffffffb3;
+    border: solid 2px #b00020;
+    border-radius: 4px;
+    color: #b00020;
+    height: 21px;
+    align-self: flex-end;
+}
+
+.completed label{
+    text-decoration: line-through 1.50px #b00020;
+}
+
+.destroyAll{
+    background-color: #e63946;
+    height: 25px;
+    margin-right: 2vw;
+    border: none;
+    border-radius: 4px;
+}
+
+
+footer{
+    margin: 0 2vw 0 2vw;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 15vh;
+}
+
+@media (min-width: 500px) {
+
+
+    body {
+       width: 90vw;
+    }
+}
+
+@media (min-width: 600px) {
+
+
+    body {
+       width: 80vw;
+    }
+}
+
+@media (min-width: 800px) {
+
+
+    body {
+       width: 70vw;
+    }
+}
+
+@media (min-width: 1000px) {
+
+
+    body {
+       width: 55vw;
+    }
+}
