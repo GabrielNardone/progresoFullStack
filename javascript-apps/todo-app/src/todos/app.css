@@ -5,7 +5,7 @@ body {
     background-color: #121212;
 }
 
-html{
+html {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ html{
 
 .main-section {
     color: #faf9f7;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #ffffff14;
     margin: 5vh;
     font-family: 'Gentium Book Basic', serif;
 }
@@ -43,7 +43,7 @@ html{
     background-color: #ffffff4d;
     border-radius: 4px;
     border: none;
-    color: #27241d;
+    color: #faf9f7;
 }
 
 .header-list {
@@ -57,7 +57,7 @@ html{
     list-style: none;
 }
 
-.filter{
+.filter {
     color: #faf9f7;
     text-decoration: none;
     border-radius: 4px;
@@ -68,29 +68,29 @@ html{
     border: #ffffffb3 solid 2px;
 }
 
-article{
+article {
     display: flex;
     flex-direction: column;
 }
 
-article div{
+article div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.incompleteCount{
+.incompleteCount {
     margin-left: 2vw;
     font-size: 1.2rem;
 }
 
-.ul-todo-list{
+.ul-todo-list {
     margin: 0 2vw 0 2vw;
     padding-left: 0;
     list-style-type: none;
 }
 
-.li-item{
+.li-item {
     background-color: #ffffff4d;
     color: #fff;
     display: flex;
@@ -99,12 +99,52 @@ article div{
     margin-top: 1.5vh;
 }
 
-.li-item div label{
+.li-item div label {
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-.li-item button{
+.li-item div {
+    margin-left: -12px;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.geekmark {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    border-radius: 100%;
+    background-color: #faf9f7;
+}
+
+.li-item:hover input ~ .geekmark {
+    background-color: #ffeb3b;
+}
+
+.li-item input:checked ~ .geekmark {
+    background-color: #3FFF00;
+}
+
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+
+
+.li-item button {
     background-color: #ffffffb3;
     border: solid 2px #b00020;
     border-radius: 4px;
@@ -113,11 +153,11 @@ article div{
     align-self: flex-end;
 }
 
-.completed label{
-    text-decoration: line-through 1.50px #b00020;
+.completed label {
+    color: #3FFF00;
 }
 
-.destroyAll{
+.destroyAll {
     background-color: #e63946;
     height: 25px;
     margin-right: 2vw;
@@ -126,7 +166,7 @@ article div{
 }
 
 
-footer{
+footer {
     margin: 0 2vw 0 2vw;
     text-align: center;
     font-size: 0.8rem;
@@ -138,7 +178,7 @@ footer{
 
 
     body {
-       width: 90vw;
+        width: 90vw;
     }
 }
 
@@ -146,7 +186,7 @@ footer{
 
 
     body {
-       width: 80vw;
+        width: 80vw;
     }
 }
 
@@ -154,7 +194,7 @@ footer{
 
 
     body {
-       width: 70vw;
+        width: 70vw;
     }
 }
 
@@ -162,6 +202,6 @@ footer{
 
 
     body {
-       width: 55vw;
+        width: 55vw;
     }
 }

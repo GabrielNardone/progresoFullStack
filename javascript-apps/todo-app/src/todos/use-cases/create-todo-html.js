@@ -11,7 +11,8 @@ export const createTodoHTML = (todo) => {
             <div>
 
                 <input id="todo-item" type="checkbox" ${todo.done ? 'checked' : ''}>
-                <label for="todo-item">${todo.title}</label>
+                <span class="geekmark"></span>
+                <label class="check-style" for="todo-item">${todo.title}</label>
 
             </div>
 
